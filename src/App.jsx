@@ -3,7 +3,8 @@ import axios from 'axios'
 import './App.css'
 
 function App() {
-  const BASE_URL = import.meta.env.VITE_BASE_URL || 'http://localhost:3000/contacts'
+  // const BASE_URL = import.meta.env.VITE_BASE_URL || 'http://localhost:3000/contacts'
+  const BASE_URL = window.RUNTIME_BASE_URL || import.meta.env.VITE_BASE_URL || 'http://localhost:3000/contacts'
 
   console.log('BASE_URL:', BASE_URL)
 
